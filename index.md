@@ -1,27 +1,13 @@
 ---
 layout: default
-title: LightSpeed Contact
+title: Home
 ---
 
-## About
-LightSpeed is a lightweight Jekyll theme designed to be privacy-friendly (~~no~~ _very little_ JavaScript), fast, and
-excellent at delivering content.
+## Hiii 
+Im silas and youve come across my website. This site is used to host a collection of my projects and work, and show off my skills and experience.
 
-## About, Further
-This second section demonstrates spacing. CSS is kept to a minimum with minor styling
-for site colours and spacing. prism.js is used for code styling.    
-<br>
-Here's a new paragraph for you.  
-
-## Features
-- Pagination
-    - Posts
-    - Categories
-- Posts
-- RSS
-- Syntax highlighting
-- Basic Mobile Support
-- SEO Plugin
+This website is sill a bit of a work in progress, so please excuse the mess atm
 
 ## Contact
-Email me, [tom@tomjack.ca](mailto:tom@tomjack.ca).
+You can find my github here, [Github](https://github.com/Cryaniptic).
+Shoot me an email, [silasbutler@gmail.com](mailto:silasbutler@gmail.com).
