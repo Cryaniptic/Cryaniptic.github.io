@@ -7,3 +7,4 @@ gem "jekyll-seo-tag"
 gem "webrick"
 gem "tzinfo"
 gem 'tzinfo-data'
+gem "jekyll-sass-converter", "~> 2.2.0"
