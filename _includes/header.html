@@ -13,7 +13,7 @@
             {% if forloop.last %}
                 <span>{{ part | replace:'-',' ' | capitalize }}</span>
             {% else %}
-                <a href="{{ site.baseurl }}{{ path }}/">{{ part | replace:'-',' ' | capitalize }}</a>
+                <span>{{ part | replace:'-',' ' | capitalize }}</span>
             {% endif %}
         {% endfor %}
     </h1>
