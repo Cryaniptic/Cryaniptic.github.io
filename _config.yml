@@ -26,8 +26,13 @@ autopages:
   enabled: true
   categories:
     title: 'Posts in category :cat'
-    permalink: '/category/:cat'
     silent: false
+
+collections:
+  Projects:
+    output: true
+
+permalink: none
 
 # Exclusions
 exclude: [ 'README.md', 'COPYING' ]
