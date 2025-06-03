@@ -1,5 +1,22 @@
 <div class="header">
-    <h1>Silas</h1>
+    <h1>
+        <a href="{{ site.baseurl }}/">Silas</a>
+        {% assign url_parts = page.url | split: '/' | reject: '' %}
+        {% assign path = "" %}
+        {% assign skip_parts = 1 %}
+        {%- comment -%}
+        Skip date parts for posts (e.g., /2025/06/02/title/)
+        {%- endcomment -%}
+        {% for part in url_parts offset:skip_parts %}
+            / 
+            {% assign path = path | append: "/" | append: part %}
+            {% if forloop.last %}
+                <span>{{ part | replace:'-',' ' | capitalize }}</span>
+            {% else %}
+                <a href="{{ site.baseurl }}{{ path }}/">{{ part | replace:'-',' ' | capitalize }}</a>
+            {% endif %}
+        {% endfor %}
+    </h1>
     <br>
     <h5><i>A collection of works</i></h5>
     <br>
