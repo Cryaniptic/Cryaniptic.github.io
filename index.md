@@ -10,4 +10,3 @@ This website is sill a bit of a work in progress, so please excuse the mess atm
 
 ## Contact
 You can find my github here, [Github](https://github.com/Cryaniptic).
-Shoot me an email, [silasbutler@gmail.com](mailto:silasbutler@gmail.com).
