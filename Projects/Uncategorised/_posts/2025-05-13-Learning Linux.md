@@ -19,4 +19,4 @@ its a pretty start. Now ive actually got to start using this OS for
 something useful :/
 
 ![Desktop 
-!enviroment](/assets/image/Linux/Screenshot-2025-06-13_12:51:50.png)
+!enviroment](/assets/image/Linux/Screenshot-2025-06-13.png)
