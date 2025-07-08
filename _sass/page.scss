@@ -68,7 +68,10 @@ a {
 /* 07 Secondary colors */
 
 h1,
-h2,
-strong {
+h2 {
   font-weight: 500;
+}
+
+strong {
+  font-weight: bolder;
 }
