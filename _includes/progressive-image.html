@@ -1,0 +1,13 @@
+{% raw %}{% assign low_res = include.src | replace: '.', '-low.' %}
+{% assign high_res = include.src %}
+
+<div class="progressive-image-container">
+  <img 
+    class="progressive-image progressive-image-low" 
+    src="{{ low_res | relative_url }}" 
+    data-src="{{ high_res | relative_url }}"
+    alt="{{ include.alt }}"
+    width="{{ include.width }}"
+    height="{{ include.height }}"
+  >
+</div>{% endraw %}

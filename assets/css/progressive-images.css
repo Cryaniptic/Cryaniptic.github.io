@@ -1,0 +1,41 @@
+.progressive-image-container {
+  position: relative;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  
+  // Maintain aspect ratio
+  padding-top: calc(100% / (var(--aspect-ratio, 3/2)));
+}
+
+.progressive-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.8s ease, opacity 0.8s ease;
+}
+
+.progressive-image-low {
+  filter: blur(10px) contrast(120%);
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.progressive-image-low.loaded {
+  filter: blur(0) contrast(100%);
+  opacity: 1;
+  transform: scale(1);
+}
+
+// Loading animation
+@keyframes pixel-pulse {
+  0% { filter: blur(12px) contrast(130%); }
+  50% { filter: blur(8px) contrast(110%); }
+  100% { filter: blur(12px) contrast(130%); }
+}
+
+.progressive-image-low:not(.loaded) {
+  animation: pixel-pulse 2s infinite;
+}

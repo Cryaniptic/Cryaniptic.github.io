@@ -2,9 +2,9 @@
 
 # Check if title is provided
 if [ -z "$1" ]; then
-    echo "Error: No title provided"
-    echo "Usage: $0 \"Post Title\" [category]"
-    exit 1
+  echo "Error: No title provided"
+  echo "Usage: $0 \"Post Title\" [category]"
+  exit 1
 fi
 
 # Get the title and convert to lowercase with hyphens for filename
@@ -12,7 +12,7 @@ TITLE="$1"
 FILENAME_TITLE=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g' | sed -E 's/^-|-$//g')
 
 # Get the category or default to "uncategorised"
-CATEGORY=${2:-uncategorised}
+CATEGORY=${2:-Uncategorised}
 
 # Create the directory if it doesn't exist
 POSTS_DIR="Projects/$CATEGORY/_posts"
@@ -26,12 +26,12 @@ FILENAME="$POSTS_DIR/$DATE-$FILENAME_TITLE.md"
 
 # Check if file already exists
 if [ -f "$FILENAME" ]; then
-    echo "Error: File already exists: $FILENAME"
-    exit 1
+  echo "Error: File already exists: $FILENAME"
+  exit 1
 fi
 
 # Create the file with front matter
-cat > "$FILENAME" <<EOF
+cat >"$FILENAME" <<EOF
 ---
 layout: post
 title: "$TITLE"
@@ -46,4 +46,3 @@ echo "Created new Jekyll post: $FILENAME"
 
 # open file with nano
 nano $FILENAME
-
