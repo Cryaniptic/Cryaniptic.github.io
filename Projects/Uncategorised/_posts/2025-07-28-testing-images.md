@@ -6,4 +6,9 @@ categories: uncategorised
 ---
 
 TESTING
-!test](/assets/image/Uncategorised/Testing)
+![test](/assets/image/Uncategorised/Testing)
+
+{% raw % }{% include progressive-image.html
+  src="/assets/image/Uncategorised/Testing"
+  alt="testing"
+%}{% endraw % }
