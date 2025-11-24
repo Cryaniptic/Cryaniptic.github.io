@@ -59,13 +59,11 @@ Monthly workshop where volunteers offer their experience and skills to fix broke
 __PAST (Perth Student Aerospace Team)__ &#124; Curtin University &#124; Member since 2024
 
 An undergraduate led team of students that aims to make and launch a CubeSat
-
 <br/><br/>
 
 __Curtin Robotics Club__ &#124; Secretary &#124; 2026
 
 Elected executive position to help organise events, manage administrative tasks, and liason with industry representatives.
-
 <br/><br/>
 
 ## Education
@@ -96,4 +94,5 @@ __Adam Sales__ &#124; Head chef at Le Rebelle &#124; Contact: 0415 089 276
 {% endcomment %}
 
 __Donna Hatton__ &#124; Head of IT department at All Saints College &#124; 0407=997=562
+
 
